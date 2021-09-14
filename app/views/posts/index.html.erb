@@ -1,5 +1,8 @@
 <% @posts.each do |post| %>
   <p><%= post.message %></p>
+    <% post.comments.each do |comment|  %>
+      <p class="comment-body"><%= comment %></p>
+    <% end %>
 <% end %>
 
 <%= link_to new_post_path do %>
