@@ -16,7 +16,8 @@
     <nav> 
       <%= link_to "Posts", posts_url, class: "navbar-link" %>
       <%= link_to "New Post", new_post_url, class: "navbar-link" %>
-      <% if true %>
+      <% if session[:user_id] %>
+      Logged in successfully as <%= session[:user_first_name] %>
         <%= link_to "Log Out", "#", class: "navbar-link" %>
       <% end %>
     </nav>
