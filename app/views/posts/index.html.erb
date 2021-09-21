@@ -25,7 +25,7 @@
     <h3>Post contents: <%= post.message %></h3>
 
     <%= render partial: "posts/like", locals: { post: post } %>
-
+    <p id='like_count'></p>
     <p>Likes: <%= post.likes_count %></p>
 
   <div>
