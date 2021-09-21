@@ -12,3 +12,6 @@
 //
 //= require rails-ujs
 //= require_tree .
+//= require("custom/test")
+
+console.log('application.js');
