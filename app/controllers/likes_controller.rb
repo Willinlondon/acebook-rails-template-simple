@@ -5,7 +5,10 @@ class LikesController < ApplicationController
 
   def create
     @like = Like.create(like_params)
-    redirect_to posts_url
+    respond_to do |format|
+      format.json { render :json => Like.all }
+    end
+    # redirect_to posts_url 
   end
 
   def index
