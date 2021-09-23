@@ -12,7 +12,6 @@ class LikesController < ApplicationController
       format.json { render :json => post_likes }
     end
 
-    # redirect_to posts_url 
   end
 
   def index

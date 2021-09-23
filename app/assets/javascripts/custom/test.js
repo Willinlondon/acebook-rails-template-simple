@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   allLikes.forEach(element => 
     //console.log(element)
     element.addEventListener('submit', () => {
-      // event.preventDefault();
-      document.getElementById('like_count').innerText = like++
+      //document.getElementById('like_count').innerText = '<json response here>'
+      
     })
   );
   
