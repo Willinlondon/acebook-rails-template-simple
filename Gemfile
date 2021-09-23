@@ -56,3 +56,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Pagination gem
 gem 'pagy'
+
+# Hotwire for Turbo
+gem 'hotwire-rails'
+
