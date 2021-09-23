@@ -5,9 +5,13 @@ class LikesController < ApplicationController
 
   def create
     @like = Like.create(like_params)
+    
+    post_likes = Post.find_by(id: @like.post_id).likes_count
+
     respond_to do |format|
-      format.json { render :json => Like.all }
+      format.json { render :json => post_likes }
     end
+
     # redirect_to posts_url 
   end
 
