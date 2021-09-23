@@ -9,9 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
     //console.log(element)
     element.addEventListener('submit', () => {
       //document.getElementById('like_count').innerText = '<json response here>'
-      
+      console.log(element);
     })
   );
-  
+
+
 
 })
