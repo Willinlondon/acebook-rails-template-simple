@@ -24,14 +24,8 @@
           <div><%= image_tag (post.avatar), :class => "post-img" if post.avatar.attached? %></div>
         </div>
         <div class="card-footer text-end bg-white border-0">
-          <%= turbo_frame_tag :like do %>
-            <%= form_for @like do |form| %>
-            <%= form.hidden_field :post_id, :value => "#{post.id}" %>
-              <%= form.hidden_field :user_id, required: true, value:"#{session[:user_id]}" %> 
-              <button type="submit" class="d-inline btn text-white btn-light btn-sm">👍</button>
-              <div class="d-inline px-2"> <%= post.likes_count %></div>
-              <button type="submit" class="d-none btn text-white btn-light btn-sm">👎</button>
-            <% end %>
+          <%= turbo_frame_tag :like, class: "save-scroll" do %>
+            <%= render partial: 'like', locals: { post: post } %>
           <% end %>
         </div>
       </div>
