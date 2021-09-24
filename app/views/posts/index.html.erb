@@ -40,7 +40,8 @@
             <% if commentator.avatar.attached? %>
               <%= image_tag commentator.avatar.variant(resize_to_limit: [75, 75])%>
               <% else %>
-              <img src="octo.png" >
+              <img src="octo.png" width="40" 
+              height="40">
             <% end %>
             <%= commentator.first_name %>
           </li>
