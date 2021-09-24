@@ -39,6 +39,8 @@
             <% commentator = User.find(comment_object.user_id) %>
             <% if commentator.avatar.attached? %>
               <%= image_tag commentator.avatar.variant(resize_to_limit: [75, 75])%>
+              <% else %>
+              <img src="octo.png" >
             <% end %>
             <%= commentator.first_name %>
           </li>
