@@ -63,3 +63,5 @@ gem 'webpacker'
 gem "turbo-rails", "~> 0.7.15"
 
 gem 'mini_magick', '~> 4.8'
+
+gem "aws-sdk-s3", require: false
