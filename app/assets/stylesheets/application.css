@@ -305,3 +305,11 @@ nav.pagy-nav {
 .post-btn {
   float: right;
 }
+
+.not-liked {
+  background: transparent;
+}
+
+.liked {
+  background: green;
+}
