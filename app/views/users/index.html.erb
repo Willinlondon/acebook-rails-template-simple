@@ -14,6 +14,9 @@
 <%= form.password_field :password, class: "form-control", placeholder: "Enter a password", required: true %>
 
 <%= form.label :profile_picture %>
+<input name="authenticity_token" 
+               type="hidden" 
+               value="<%= form_authenticity_token %>"/>
 <br>
 <div class="fileUpload ace-btn ace-btn-tall">
   <span>Upload</span>
