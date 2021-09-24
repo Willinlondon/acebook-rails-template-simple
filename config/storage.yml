@@ -13,7 +13,7 @@ amazon:
   region: eu-west-2
   bucket: eightbook-images
 
-  gcs: &gcs
+gcs: &gcs
   service: GCS
   project: ""
 
