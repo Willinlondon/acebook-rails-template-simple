@@ -16,7 +16,7 @@
     <%= form_with model: @like, method: :delete do |form| %>
       <%= form.hidden_field :post_id, :value => "#{post.id}" %>
       <%= form.hidden_field :user_id, :value => session[:user_id] %>
-      <%= form.submit "👎", class:"d-inline btn text-white btn-light btn-sm",
+      <%= form.submit "👍", class:"d-inline btn text-white btn-success btn-sm",
         data: { 'turbo-frame': "post-#{post.id}-like" } %>
     <% end %>
   <% end %>
